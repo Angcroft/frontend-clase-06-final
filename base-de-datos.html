@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        async function tofu() {
+            const consulta = await fetch("https://raw.githubusercontent.com/angcroft/frontend-clase-06/main/data.json")
+            const data
+            console.log(data);
+            data.forEach((x)=>{
+                document.querySelector("body").innerHTML += '<p>' + x.title + '</p>';
+            }
+        }
+    </script>
+</html>
